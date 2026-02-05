@@ -61,13 +61,6 @@ Your RAG system should implement:
 - Document your design choices and tradeoffs
 - Explain your approach to quality evaluation
 
-## Submission
-
-- Create a public git repository containing your submission and share the repository link
-- Do not fork this repository or create pull requests
-
----
-
 ## Solution Overview
 
 This submission implements a **custom RAG pipeline** (no LangChain, LlamaIndex, or other end-to-end RAG frameworks). Core components use **Python 3.8+** with `sentence-transformers`, `numpy`, `torch`, and `transformers` (individual libraries only). The **single entry point** is `rag.py`: load emails → chunk → embed → retrieve → generate.
